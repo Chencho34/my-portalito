@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
-import { Nav } from '../../components'
+import { Footer, Nav } from '../../components'
 
 export default function PublicLayout() {
   return (
-    <div>
-      <Nav/>
+    <>
+      <Nav />
       <Outlet />
-    </div>
+      <Footer />
+    </>
   )
 }
