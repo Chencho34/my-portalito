@@ -3,7 +3,7 @@ import { IoHome } from 'react-icons/io5'
 import { BsFillGridFill } from 'react-icons/bs'
 import { LuLogOut } from 'react-icons/lu'
 import { FaFile } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 interface Path {
   path: string;
@@ -22,14 +22,18 @@ export default function Nav() {
   return (
     <nav className='w-full h-16 bg-[#212121]'>
       <section className='flex items-center justify-between w-10/12 h-full mx-auto max-w-7xl'>
-        <ul>
+        <article className='flex items-center gap-4 text-[#fafafa]'>
+          <h6 className='text-2xl font-medium '>MyPortalITO</h6>
+          <p className='text-sm font-thin'>System to students</p>
+        </article>
+        <ul className='flex gap-10'>
           {
             paths.map(({ icon, item, path }, index) => (
               <li key={index}>
-                <Link to={path}>
+                <NavLink to={path} className='flex items-center gap-2 text-sm font-normal text-[#fafafa]'>
                   {icon}
                   {item}
-                </Link>
+                </NavLink>
               </li>
             ))
           }
