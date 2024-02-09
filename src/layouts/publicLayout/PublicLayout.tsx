@@ -5,7 +5,9 @@ export default function PublicLayout() {
   return (
     <>
       <Nav />
-      <Outlet />
+      <main className='h-[calc(100vh-64px)] flex items-center bg-slate-200'>
+        <Outlet />
+      </main>
       <Footer />
     </>
   )
