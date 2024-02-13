@@ -1,25 +1,4 @@
-import { Bounce, ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-
-export default function Home() {
-  const handleToast = () =>
-    toast('Welcome Again Armando!', {
-      position: 'bottom-right',
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'dark',
-      transition: Bounce,
-    })
-
-  // <div>
-  //   <h1>Home</h1>
-  //   <button onClick={handleToast} className=''>notify</button>
-  //   <ToastContainer />
-  // </div>
+export default function Home () {
   return (
     <div className='grid grid-cols-12 gap-4 w-[76%] mx-auto'>
       <div className='col-span-12 md:col-span-12 h-[120px] bg-white shadow p-8 rounded'>
@@ -31,6 +10,7 @@ export default function Home() {
             />
           </section>
           <section>
+            <h1>Ingenieria Informatica</h1>
             <h1>Jose Armando Crescencio Rico</h1>
             <p className='text-sm'>21010001</p>
           </section>
@@ -66,7 +46,22 @@ export default function Home() {
         </section>
       </div>
       <div className='col-span-12 md:col-span-5 h-[300px] bg-white shadow p-8 rounded'>
-        Escolar Information
+        <h1 className='text-xl'>Escolar Information</h1>
+        <p className='text-sm'>
+          Carrera: <span>Informatica</span>
+        </p>
+        <p className='text-sm'>
+          Semestre actual: <span>7</span>
+        </p>
+        <p className='text-sm'>
+          Ingreso: <span>Enero - Junio - 2021</span>
+        </p>
+        <p className='text-sm'>
+          Reticula: <span>IINF - 2012 - 220</span>
+        </p>
+        <p className='text-sm'>
+          Periodo: <span>Enero - Junio - 2024</span>
+        </p>
       </div>
     </div>
   )
