@@ -19,7 +19,7 @@ const paths: Path[] = [
 
 export default function NavItems (): JSX.Element {
   return (
-    <ul className='hidden md:flex h-full items'>
+    <ul className='hidden md:flex flex-row h-full'>
       {
         paths.map(({ icon, item, path }, index) => (
           <NavItem key={index} icon={icon} item={item} path={path}/>

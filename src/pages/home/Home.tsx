@@ -1,4 +1,4 @@
-export default function Home () {
+export default function Home (): JSX.Element {
   return (
     <div className='grid grid-cols-12 gap-4 w-[76%] mx-auto'>
       <div className='col-span-12 md:col-span-12 h-[120px] bg-white shadow p-8 rounded'>

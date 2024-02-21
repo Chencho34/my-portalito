@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { Footer, Nav } from '../../components'
+import { Footer, Nav, Wrapper } from '../../components'
 import { useEffect } from 'react'
 import { Bounce, ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -27,10 +27,10 @@ export default function PublicLayout() {
   return (
     <>
       <Nav />
-        <main className='h-[calc(100vh-64px)] bg-hero-login flex items-center bg-slate-200'>
-          <Outlet />
-          <ToastContainer />
-        </main>
+      <Wrapper>
+        <Outlet />
+        <ToastContainer />
+      </Wrapper>
       <Footer />
     </>
   )
