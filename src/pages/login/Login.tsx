@@ -35,7 +35,7 @@ export default function Login (): JSX.Element {
   return (
     <main className='grid grid-flow-row grid-cols-12 h-screen'>
       <article className='hidden md:grid md:col-span-5 bg-hero-login bg-cover bg-no-repeat object-cover'>
-        <section className='grid place-content-end text-white h-full bg-gradient-to-t from-[rgb(33,33,33,.9)] to-[rgb(33,33,33,.4)] bg-transparent p-8 overflow-hidden'>
+        <section className='grid bg-slate-100 place-content-end text-white h-full bg-gradient-to-t from-[rgb(33,33,33,.9)] to-[rgb(33,33,33,.4)] bg-transparent p-8 overflow-hidden'>
           <p className='flex flex-col text-wrap text-5xl tracking-[2px] leading-tight mb-6 font-medium overflow-hidden text-left'>
             <span className=''>Hello,</span> 
             <span className=''>Welcome!</span>
